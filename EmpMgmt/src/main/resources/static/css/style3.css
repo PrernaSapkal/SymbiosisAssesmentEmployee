@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Link Styles */
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+/* Container for Sections */
+section {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Borrower and Books Section Styles */
+section h1 {
+    margin-bottom: 10px;
+}
+
+section a {
+    margin: 5px;
+}
+
+/* Spacing */
+.br {
+    margin: 10px 0;
+}

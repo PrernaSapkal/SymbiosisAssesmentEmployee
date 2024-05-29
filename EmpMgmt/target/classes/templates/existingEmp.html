@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" th:href="@{/css/style1.css}">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<thead>
+<th>id</th>
+<th>firstName</th>
+<th>lastName</th>
+<th>email</th>
+<th>department</th>
+</thead>
+<tbody>
+<tr th:each="employee: ${employees}">
+<td th:text="${employee.id}">id<td>
+<td th:text="${employee.firstName}">lastName<td>
+<td th:text="${employee.lastName}">lastName<td>
+<td th:text="${employee.email}">email<td>
+<td th:text="${employee.department}">department<td>
+<td>
+		<form th:action="@{/employee/delete}" method="post">
+                        <input type="hidden" name="id" th:value="${employee.id}">
+                        <button type="submit">Delete</button>
+                    </form>		
+			</td>
+			<td>
+                    <form th:action="@{/employee/update}" method="get">
+                        <input type="hidden" name="id" th:value="${employee.id}">
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+</tbody>
+</table>
+</body>
+</html>
